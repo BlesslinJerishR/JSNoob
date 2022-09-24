@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <h2 id="demo">I am invisible</h2>
+
+    <button type="button" onclick="Hide()">
+        Hide me
+    </button>
+
+    <button type="button" onclick="Show()">
+        Show me
+    </button>
+     
+    <p id="demo"></p>
+</body>
+<script>
+    function Hide(){
+        document.getElementById('demo').style.display = "none";
+    }
+
+    function Show(){
+        document.getElementById('demo').style.display = "block";
+    }
+</script>
+</html>
