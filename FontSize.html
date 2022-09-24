@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontsize</title>
+</head>
+<body>
+    <h2>Change font size</h2>
+    <p id="demo">My fontsize will change.</p>
+    <button type="button" onclick="ChangeFont()">Change Font</button>
+    <button type="button" onclick="ReturnNormal()">Return Normal</button>
+</body>
+
+<script>
+    function ChangeFont() {
+        document.getElementById("demo").style.fontSize = "100px";
+    }
+
+    function ReturnNormal() {
+        document.getElementById("demo").style.fontSize = "16px";
+    }
+</script>
+
+</html>
