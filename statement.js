@@ -6,3 +6,5 @@ c = a + b;
 console.log(c);
 
 let person = "Hege";
+
+// Syntax
