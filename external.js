@@ -3,4 +3,5 @@ function external(){
 }
 function internal(){
     document.getElementById("external").innerHTML = "I am reverted to internal html.";
-}   
+}
+
