@@ -11,8 +11,10 @@
     <p>2+2 = <span id="meth"></span></p>
     <button type="button" onclick="meth()">Meth</button>
     <script>
+
+        const me = document.getElementById("meth");  
         function meth(){
-            document.getElementById("meth").innerHTML = 2+2;
+            me.innerHTML = 2+2;
         }
     </script>
 </body>
