@@ -8,3 +8,4 @@ const person = {
 }
 
 console.log(person.fullName());
+console.log(person.firstName.length);
