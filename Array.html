@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Fruits Shop</h1>
+    <p id="fruits"></p>
+    <ul id="fruit"></ul>
+    <ul id="fruit1"></ul>
+
+    <button type="button" onclick="Fruits()">View Fruits</button>
+    <script>
+
+        function Fruits() {
+        document.getElementById("fruits").innerHTML = "FRUITS AVAILABLE IN SHOP";
+        const fruits = ["apple", "orange", "banana"];
+        let html = `<h2>Fruits</h2><ul>`
+        for (const fruit of fruits) {
+            html += `<li>${fruit}</li>`; 
+        }
+        html += `</ul>`;
+        document.getElementById('fruit').innerHTML = html
+        let totalFruits =  fruits.length;
+        text = "<ul>"
+        for (let i=0; i < totalFruits; i++) {
+            text += "<li> We have " + fruits[i] +"</li>";
+        }
+        text += "</ul>";
+        document.getElementById('fruit1').innerHTML = text;
+    }
+    </script>
+</body>
+</html>
