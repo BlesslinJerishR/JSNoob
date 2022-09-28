@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <h2>Javascript Template Literals</h2>
+    <p id="template-literlas"></p>
+    <button type="button" onclick="View()">View</button>
+    <button type="button" onclick="Hide()">Hide</button>
+
+</body>
+
+<script>
+
+    function View() {
+    let header = "Template Literals";
+    let tags = ["template literlas", "Javascript", "es6"];
+
+    let html = `<h2> ${header}</h2><ul>`;
+
+    for(const tag of tags) {
+        html += `<li> ${tag}</li>`;
+    }
+
+    html += `</ul>`;
+
+    document.getElementById("template-literlas").innerHTML = html;
+    }
+
+    function Hide(){
+        document.getElementById("template-literlas").innerHTML = "";
+    }
+</script>
+
+</html>
