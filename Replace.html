@@ -9,10 +9,17 @@
 <body>
     
     <p id="welcome">Welcome to Chennai</p>
-    <button type="button" onclick="Change()">Change</button>
+    <button type="button" onclick="Change()">Normal Change</button>
     <p id="city">
         City is   
     </p>
+
+    <h3>Regular Expression - Global Match</h3>
+    <p id="regWelcome">Welcome to Chennai & Chennai Metro</p>
+    <button type="button" onclick="regChange()">Regular Expression Change</button>
+
+    
+
     <script>
         function Change() {
             let welcome = document.getElementById('welcome').innerHTML;
@@ -24,7 +31,10 @@
 
         }
         
-
+        function regChange() {
+            let iRegWelcome = document.getElementById('regWelcome').innerHTML;
+            document.getElementById('regWelcome').innerHTML = iRegWelcome.replace(/Chennai/g, "Bangalore")
+        }
 
     </script>
 </body>
