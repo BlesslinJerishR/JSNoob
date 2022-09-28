@@ -7,14 +7,25 @@
     <title>Replace</title>
 </head>
 <body>
+    
     <p id="welcome">Welcome to Chennai</p>
-    <button onclick="Change()">Change</button>
-
+    <button type="button" onclick="Change()">Change</button>
+    <p id="city">
+        City is   
+    </p>
     <script>
         function Change() {
             let welcome = document.getElementById('welcome').innerHTML;
-            welcome = welcome.replace("Chennai, Bangalore") 
+            document.getElementById('welcome').innerHTML = welcome.replace("Chennai", "Bangalore") 
+            
+            var idCity = document.getElementById('city').innerHTML;
+            var city = "Bangalore";
+            document.getElementById('city').innerHTML = "City is "+ city;
+
         }
+        
+
+
     </script>
 </body>
 </html>
